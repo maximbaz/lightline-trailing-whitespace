@@ -7,7 +7,7 @@ function! s:lightline_trailing_whitespace_refresh()
   let b:lightline_trailing_whitespace_changedtick = b:changedtick
 endfunction
 
-augroup lightline_trailing_whitespace
+augroup lightline#trailing_whitespace
   autocmd!
   autocmd CursorHold,BufWritePost * call s:lightline_trailing_whitespace_refresh()
 augroup END
